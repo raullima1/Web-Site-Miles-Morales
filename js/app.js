@@ -41,7 +41,4 @@ document.addEventListener('DOMContentLoaded', () =>{
     .fromTo('.item-5', 1.5, 
         {x: -100000, opacity: 0},
         {x: 0, opacity: 1, ease: Expo.easeInOut}, '-=0.5')
-
-
-
 })

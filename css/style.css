@@ -40,7 +40,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   height: 85vh;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 960px) {
@@ -50,7 +49,6 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
-    overflow: hidden;
   }
 }
 
@@ -68,20 +66,18 @@ p {
           align-items: flex-start;
 }
 
-.spiderman {
-  width: 130%;
-  -webkit-transform: translate3d(-150px, -50px, 0);
-          transform: translate3d(-150px, -50px, 0);
-  -webkit-transition: .7s ease;
-  transition: .7s ease;
+.container-item-2 {
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
 }
 
-@media screen and (max-width: 960px) {
-  .spiderman {
-    width: 100%;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
+.spiderman2 {
+  width: 130%;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+  -webkit-transform: translate3d(-150px, 20px, 0);
+          transform: translate3d(-150px, 20px, 0);
 }
 
 .btn {
@@ -698,9 +694,5 @@ header {
 .py-5 {
   padding-top: 72px;
   padding-bottom: 72px;
-}
-
-.border {
-  border: 1px solid red;
 }
 /*# sourceMappingURL=style.css.map */

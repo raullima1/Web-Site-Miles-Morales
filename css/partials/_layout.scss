@@ -5,12 +5,10 @@
     display: flex;
     align-items: center;
     height: 85vh;
-    overflow: hidden;
 
     @include responsive() {
         flex-direction: column;
         height: auto;
-        overflow: hidden;
     }
 }
 
@@ -22,17 +20,13 @@
 }
 
 .container-item-2 { 
+    flex-grow: 5;
 }
 
-.spiderman {
+.spiderman2 {
     width: 130%;
-    transform: translate3d(-150px, -50px, 0);
     transition: .7s ease;
-
-    @include responsive {
-        width: 100%;
-        transform: translate3d(0, 0, 0);
-    }
+    transform: translate3d(-150px, 20px, 0);
 }
 
 .btn { 
@@ -169,3 +163,4 @@
     background: linear-gradient(225deg, $red 0%, $red-dark 100%);
     overflow: hidden;
 }
+
